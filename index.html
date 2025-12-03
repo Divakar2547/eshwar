@@ -1,62 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head> 
-<body>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <meta name="description" content="Learning HTML"/>
+    <meta name="keywords" content="HTML, tags, elements"/>
+    <meta name="author" content="Divakar"/>
     
-    <div class="head">
-    <h1 >CSS MCQ Quiz for Student</h1>
-    <h3>Learn Inline,Internal,External Css</h3>
-    </div>
-    <div class="b">
-        <h2>Multiple Choice Question</h2>
-        <div class="question1">
-            <p><b>1. Which CSS type is written inside the HTML tag?</b></p>
-            <label><input type="radio" name="q1"> Internal CSS</label><br>
-            <label><input type="radio" name="q1"> External CSS</label><br>
-            <label><input type="radio" name="q1"> Inline CSS</label><br>
-            <label><input type="radio" name="q1"> None</label>
-        </div>
-        <div class="question2">
-            <p><b>2. Which tag is used to write Internal CSS?</b></p>
-            <label><input type="radio" name="q2"> style</label><br>
-            <label><input type="radio" name="q2"> body</label><br>
-            <label><input type="radio" name="q2"> script</label><br>
-            <label><input type="radio" name="q2"> meta</label>
-        </div>
-        <div class="question3">
-            <p><b>3. External CSS is added using</b></p>
-            <label><input type="radio" name="q3"> script</label><br>
-            <label><input type="radio" name="q3"> link</label><br>
-            <label><input type="radio" name="q3"> style</label><br>
-            <label><input type="radio" name="q3"> import</label>
-        </div>
-          <div class="boxtitle">
-            <h2>CSS Box Model Example</h2>
-        </div>
-        <div calss="box">
-            <p>Content Area <br> (padding+broder+margin)</p>
-        </div>
-        <div class="question4">
-            <p><b>4. Which is NOT part of the CSS Box model?</b></p>
-            <label><input type="radio" name="q3"> Margin</label><br>
-            <label><input type="radio" name="q3"> Padding</label><br>
-            <label><input type="radio" name="q3"> Border</label><br>
-            <label><input type="radio" name="q3"> Font-Size</label>
-        </div>
-         <div class="question5">
-            <p><b>5.Which Position keeps the element find on screen?</b></p>
-            <label><input type="radio" name="q3"> Relative</label><br>
-            <label><input type="radio" name="q3"> Absolute</label><br>
-            <label><input type="radio" name="q3">Fixed</label><br>
-            <label><input type="radio" name="q3"> Static</label>
-        </div>
-    </div>
+    <!--<meta http-equiv="refresh" content="2; url=https://www.flipkart.com/"/>>-->
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!--Semantic Elements-->
+    <a href="https://www.flipkart.com/">flipkart</a>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi eligendi porro sunt. A aspernatur autem beatae debitis dignissimos distinctio est eveniet excepturi, fugiat, illum numquam perspiciatis praesentium, quae quas quasi qui sapiente sit tenetur voluptates voluptatum. Ad aspernatur quae voluptatum? Amet aut consequuntur dolorum eaque eligendi nemo repellendus similique veniam?
+    </p>
+    <pre>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        A accusamus ad aliquam aliquid assumenda aut blanditiis
+        debitis deserunt dignissimos doloremque doloribus dolorum
+        ducimus enim eos facilis in inventore ipsa iure minima natus
+        nobis odio praesentium quasi quibusdam ratione reprehenderit
+        sapiente sequi, sunt ullam veritatis vero voluptatem voluptates,
+        voluptatum. Asperiores aspernatur eligendi est ipsum iusto magni
+        molestias rerum, sit tempora vitae. Accusamus autem consequatur
+        consequuntur deleniti dicta dolorem doloremque dolorum ducimus enim
+        error esse et eveniet, exercitationem fuga fugiat hic illum ipsam
+        necessitatibus nobis numquam obcaecati odio praesentium quasi quia
+        quis sapiente sequi sint sit tenetur vitae? Aperiam quasi sint sunt?
+    </pre>
+    <section>
+        <h2>Section</h2>
+    </section>
+    <!--Non-Semantic Elements-->
+    <img src="https://picsum.photos/200/300" alt="Image">
+    <!--Inline Elements-->
+    <span>Span</span>
+    <!--Uordered Lists-->
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    <!--Ordered Lists-->
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ol>
+    <!--Definition Lists-->
+    <dl>
+        <dt>Term</dt>
+        <dd>Definition</dd>
+    </dl>
+    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
+    
+    <fieldset>
+        <legend>personal information</legend>
 
+    <form>
+        <table border="5">
+            <tr>
+                <td>
+                    <label for="name">Name</label></td>
+                <td><input type="text" id="name" minlength="3" maxlength="10" required> </td>
+                </td>
+            </tr>
+            <tr>
+              <td><label for="email">Email:</label></td> 
+              <td><input type="email" id="email" required></td> 
+            </tr>
+            <tr>
+                  <td><label for="password">Password:</label></td>
+                  <td><input type="password" id="password" required></td> 
 
+            </tr>
+            <tr>
+                  <td><input type="number" min="18" max="65"></td> 
+                  <td><input type="submit"></td>
+            </tr>
+             <button>Button</button>
+        </table>
+        
+        
+       
+      
+       
+       
+    </form>
 </body>
 </html>
