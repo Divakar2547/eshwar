@@ -1,0 +1,19 @@
+.flexcontainer{
+    border: solid red;
+    display: flex;
+    height: 100px;
+    width: 60px;
+    gap: 30px;
+    flex-direction: column-reverse;
+    justify-content:flex-end ;
+    align-items: center;
+
+}
+.flexitem{
+    background-color: blueviolet;
+    border: 2px solid red;
+    color: blue;
+    font-size: 20px;
+    height: 70px;
+    width: 90px;
+}
