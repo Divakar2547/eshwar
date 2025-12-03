@@ -1,19 +1,41 @@
 .flexcontainer{
-    border: solid red;
+    border:1px solid blueviolet;
     display: flex;
-    height: 100px;
-    width: 60px;
-    gap: 30px;
-    flex-direction: column-reverse;
-    justify-content:flex-end ;
-    align-items: center;
-
+    height: 90vh;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* gap: 20px;/
+    /flex-direction: row;/ */
+    /*align-items:center; */
+    /*flex-wrap: wrap;
+    align-content: center;*/
 }
-.flexitem{
-    background-color: blueviolet;
-    border: 2px solid red;
-    color: blue;
-    font-size: 20px;
-    height: 70px;
-    width: 90px;
+/* /wrap values: nowrap,wrap,wrap-reverse/ */
+/* values of justify-content:
+flex-start,center,space-around,
+space-between,space_evenly*/
+
+
+/* values of flex direction
+Row,row-reverse,column,column-reverse*/
+
+/*  values of align items 
+flex-start,flex-end,center,baseline*/
+
+ 
+.flexItem{
+    background-color: blue;
+    border: 2px solid rebeccapurple;
+    color: tomato;
+    font-size: 24px;
+    height: 60px;
+    width: 80px;
+}
+.flexItem:nth-child(1){
+    order:1;
+    align-self: flex-end;
+}
+.flexItem:nth-child(6){
+    order:-1;
+    align-self: flex-end;
 }
